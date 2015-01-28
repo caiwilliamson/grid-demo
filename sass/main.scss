@@ -1,0 +1,55 @@
+// Fonts
+//=================================================================//
+
+$font-size-base: 16;
+$font-weight-base: 300;
+$line-height-base: 1.6;
+
+$font-family-base: 'Lora', serif;
+
+// Colors
+//=================================================================//
+
+$color-green: #A2E5D3;
+$color-orange: #ff6600;
+$color-navy: #19198c;
+
+$color-obsidian: #222222;
+$color-grey: #d8d8d8;
+$color-white: #FFFFFF;
+
+// Mixins
+//=================================================================//
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+     -moz-box-shadow: $box-shadow;
+          box-shadow: $box-shadow;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+          transition: $transition;
+}
+
+// Functions
+//=================================================================//
+
+// Convert px to ems relative to a supplied context (default: $font-size-base)
+@function em($target, $context: $font-size-base) {
+  @return ($target/$context) * 1em;
+}
+
+// Imports - Choose the sass partials you wish to import
+//=================================================================//
+
+@import "grid";
+@import "styles";
+@import "screen";

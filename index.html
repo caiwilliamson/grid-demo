@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid Demo</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Font -->
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="row">
+    <div class="title col">
+      <div class="panel">
+        <h1>Grid Demo</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="a col">
+      <div class="panel">
+        <p>a</p>
+        <form>
+          <input type="text">
+        </form>
+      </div>
+    </div>
+
+    <div class="b col">
+      <div class="panel">
+        <p>b</p>
+        <form>
+          <input type="text">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="c col"> <!-- c is used to hold another row of columns (d & e), so that d & e can be centred by just centering c -->
+      <div class="row">
+
+        <div class="d col">
+          <div class="panel">
+            <p>d</p>
+          </div>
+        </div>
+
+        <div class="e col">
+          <div class="panel">
+            <p>e</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

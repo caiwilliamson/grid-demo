@@ -1,0 +1,87 @@
+/* Basic elements
+===================================================================*/
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: em(16);
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  background-color: $color-white;
+  color: $color-obsidian;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+a, i {
+  text-decoration: none;
+  color: $color-navy;
+  @include transition(color 0.3s ease);
+  &:hover {
+    color: $color-orange;
+  }
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Demo stuff
+===================================================================*/
+
+.title { text-align: center; }
+
+.container {
+  background-color: red; // For demonstration purposes
+}
+
+.panel {
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+/* Forms
+===================================================================*/
+
+form {
+  font-family: $font-family-base;
+  input, textarea {
+    font-family: $font-family-base;
+    font-size: em(16);
+    border: 1px solid $color-grey;
+    width: 100%;
+    padding: em(4);
+    &:focus {
+      outline: none;
+    }
+  }
+  textarea {
+    resize: none;
+    height: em(128);
+    vertical-align: top;
+  }
+  input[type=submit] {
+    background-color: $color-obsidian;
+    border: none;
+    color: $color-white;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $color-orange;
+      cursor: pointer;
+    }
+  }
+}
